@@ -1,14 +1,5 @@
-export interface User {
-  id: number;
-  role: string;
-  name: string;
-  username: string;
-  position: string;
-  telegram: string;
-  email: string;
-  phone: string;
-  city: string;
-}
+import { User } from "./tableUser.interface";
+
 
 export const positions = ['Дизайнер', 'Front end разработчик', 'Back end разработчик'];
 
