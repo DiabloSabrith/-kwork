@@ -1,0 +1,30 @@
+.inputWrapper {
+  position: relative;
+  width: 200px;
+  max-width: 300px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px 32px 8px 12px; /* правый padding под иконку */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  background-color: #18191A;
+  border-radius: 5px;
+  color: white;
+}
+
+.input::placeholder {
+  color: #888; /* цвет плейсхолдера, как на изображении */
+}
+
+.icon {
+  position: absolute;
+  right: -32px;     /* ближе к краю для лучшего вида */
+  top: 60%;         
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #fff;
+}

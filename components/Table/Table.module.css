@@ -1,0 +1,27 @@
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.table {
+width: 100%;
+  table-layout: auto;
+  border-collapse: separate; 
+  border-spacing: 0 10px;  
+}
+
+th, td {
+  padding: 8px 12px; 
+ font-size: 14px;
+  white-space: nowrap; 
+  text-align: left;
+
+}
+
+td.phone {
+  min-width: 120px;
+}
+
+td.city {
+  min-width: 150px;
+}

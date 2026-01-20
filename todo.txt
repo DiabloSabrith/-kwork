@@ -1,0 +1,7 @@
+Короче  витоге мы  соберем  вот так  главную страницу App.tsx
+
+
+
+ Header
+ main  === Table  и  сама  таблица  бдет дробица на TableHeader -  Table - TableFooter
+ Footer

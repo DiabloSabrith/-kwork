@@ -1,0 +1,12 @@
+.button{
+    background-color: #FF4D00;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 7px 10px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+    font-size: 14px;
+    gap: 5px;
+}

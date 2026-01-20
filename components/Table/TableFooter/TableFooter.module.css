@@ -1,0 +1,51 @@
+.footerWrapper {
+  display: flex;
+  margin-top: 16px;
+  flex-direction: column;
+  
+
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.button {
+  background-color: #18191A;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 36px;
+  font-family: 'Montserrat', sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+
+.button.active {
+  background-color: #FF4D00;
+  color: #fff;
+  transition: none;
+}
+
+.button:hover:not(.active) {
+  background-color: #2e2e2e;
+}
+
+
+.dots {
+   padding: 4px 10px;
+  background-color: #18191A;
+   border-radius: 8px;
+  color: #fff;
+  user-select: none;
+}
+
+.info {
+  font-size: 13px;
+  padding: 10px 0;
+  color: #aaaaaa;
+}

@@ -1,0 +1,19 @@
+.title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 17px;
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    vertical-align: middle;
+}
+
+.title:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sortItem {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle; 
+}
