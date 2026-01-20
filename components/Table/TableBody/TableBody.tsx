@@ -1,4 +1,4 @@
-import TableRow from '../TableRows/TableRow';
+import TableRow from '../TableRows/TableRows';
 import { users } from '../../../config/tableData';
 
 export default function TableBody() {
