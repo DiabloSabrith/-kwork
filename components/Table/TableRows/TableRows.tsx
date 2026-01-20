@@ -1,29 +1,28 @@
 import { useState } from 'react';
 import { Dropdown } from '../../ui/Dropdown/Dropdown';
+import { User, positions } from '../../../config/tableData';
 import styles from './TableRowes.module.css';
-const positions = ['Дизайнер', 'Front end разработчик', 'Back end разработчик'];
 
-export default function TableRow() {
-  const [position, setPosition] = useState('Дизайнер');
+interface TableRowProps {
+  user: User;
+}
+
+export default function TableRow({ user }: TableRowProps) {
+  const [position, setPosition] = useState(user.position);
 
   return (
-   <tr className={styles.row}>
-  <td className={styles.cell}>13619</td>
-  <td className={styles.cell}>Админ</td>
-  <td className={styles.cell}>Александр</td>
-  <td className={styles.cell}>someDesigner</td>
-  <td className={styles.cell}>
-    <Dropdown
-      options={positions}
-      value={position}
-      onChange={setPosition}
-    />
-  </td>
-  <td className={styles.cell}>@test</td>
-  <td className={styles.cell}>test@test.ru</td>
-  <td className={styles.cell}>+7 999 999 99 99</td>
-  <td className={styles.cell}>Нижний Новгород</td>
-</tr>
-
+    <tr className={styles.row}>
+      <td className={styles.cell}>{user.id}</td>
+      <td className={styles.cell}>{user.role}</td>
+      <td className={styles.cell}>{user.name}</td>
+      <td className={styles.cell}>{user.username}</td>
+      <td className={styles.cell}>
+        <Dropdown options={positions} value={position} onChange={setPosition} />
+      </td>
+      <td className={styles.cell}>{user.telegram}</td>
+      <td className={styles.cell}>{user.email}</td>
+      <td className={styles.cell}>{user.phone}</td>
+      <td className={styles.cell}>{user.city}</td>
+    </tr>
   );
 }

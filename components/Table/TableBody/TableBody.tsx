@@ -1,12 +1,11 @@
-import TableRow from "../TableRows/TableRows";
-
-const users = new Array(2).fill(null);
+import TableRow from '../TableRows/TableRow';
+import { users } from '../../../config/tableData';
 
 export default function TableBody() {
   return (
     <tbody>
-      {users.map((_, i) => (
-        <TableRow key={i} />
+      {users.map((user) => (
+        <TableRow key={user.id} user={user} />
       ))}
     </tbody>
   );
